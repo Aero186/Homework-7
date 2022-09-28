@@ -54,53 +54,84 @@ int main()
     TranslatePick(1, computerPick); // Inform user of computer selection
     
     // HANDOUT (PART A): Determine the winner of the game.
+    bool win = false;
     
-if ((userPick == 'R') && (computerPick == 'R'))
-  cout << "It is a tie." << endl;
-else if ((userPick == 'P') && (computerPick == 'P'))
-  cout << "It is a tie." << endl;
-else if ((userPick == 'S') && (computerPick == 'S'))
-  cout << "It is a tie." << endl;
-else if ((userPick == 'L') && (computerPick == 'L'))
-  cout << "It is a tie." << endl;
-else if ((userPick == 'K') && (computerPick == 'K'))
-  cout << "It is a tie." << endl;
-else if ((userPick == 'R') && (computerPick == 'P'))
-  cout << "Paper covers Rock. \nYou loose." << endl;
+  if ((userPick == 'R') && (computerPick == 'R'))
+    cout << "It is a tie." << endl;
+  else if ((userPick == 'P') && (computerPick == 'P'))
+    cout << "It is a tie." << endl;
+  else if ((userPick == 'S') && (computerPick == 'S'))
+    cout << "It is a tie." << endl;
+  else if ((userPick == 'L') && (computerPick == 'L'))
+    cout << "It is a tie." << endl;
+  else if ((userPick == 'K') && (computerPick == 'K'))
+    cout << "It is a tie." << endl;
+  else if ((userPick == 'R') && (computerPick == 'P'))
+    cout << "Paper covers Rock. \nYou loose." << endl;
 else if ((userPick == 'R') && (computerPick == 'K'))
   cout << "Spock vaporizes Rock. \nYou loose." << endl;
 else if ((userPick == 'R') && (computerPick == 'S'))
+{
   cout << "Rock crushes Scissors. \nYou Win!" << endl;
+  win = true;
+}  
 else if ((userPick == 'R') && (computerPick == 'L'))
+{
   cout << "Rock crushes Lizard. \nYou Win!" << endl;
+  win = true;
+}  
 else if ((userPick == 'L') && (computerPick == 'P'))
+{
   cout << "Lizard eats Paper. \nYou win!" << endl;
+  win = true;
+}  
 else if ((userPick == 'L') && (computerPick == 'K'))
+{
   cout << "Lizard poisons Spock. \nYou Win!" << endl;
+  win = true;
+}  
 else if ((userPick == 'L') && (computerPick == 'S'))
   cout << "Scissors decapitates Lizard. \nYou Loose." << endl;
 else if ((userPick == 'L') && (computerPick == 'R'))
   cout << "Rock crushes Lizard. \nYou Loose." << endl;
 else if ((userPick == 'K') && (computerPick == 'S'))
+{
   cout << "Spock smashes Scissors. \nYou Win!" << endl;
+  win = true;
+}  
 else if ((userPick == 'K') && (computerPick == 'R'))
+{
   cout << "Spcok vaporizes Rock. \nYou Win!" << endl;
+  win = true;
+}  
 else if ((userPick == 'K') && (computerPick == 'P'))
   cout << "Paper disproves Spock. \nYou Loose" << endl;
 else if ((userPick == 'K') && (computerPick == 'L'))
   cout << "Lizard poisons Spock. \nYou Loose." << endl;
 else if ((userPick == 'S') && (computerPick == 'P'))
+{
   cout << "Scissors cuts Paper. \nYou Win!" << endl;
+  win = true;
+}  
 else if ((userPick == 'S') && (computerPick == 'L'))
+{
   cout << "Scissors decapitates Lizard. \nYou Win!" << endl;
+  win = true;
+}  
 else if ((userPick == 'S') && (computerPick == 'R'))
   cout << "Rock crushes Scissors. \nYou Loose." << endl;
 else if ((userPick == 'S') && (computerPick == 'K'))
   cout << "Spock smashes Scissors. \nYou Loose." << endl;
 else if ((userPick == 'P') && (computerPick == 'K'))
+{
   cout << "Paper disproves Spock. \nYou Win!" << endl;
+  win = true;
+}  
 else if ((userPick == 'P') && (computerPick == 'R'))
+{
   cout << "Paper covers Rock. \nYou Win!" << endl;
+  win = true;
+}  
 else if ((userPick == 'P') && (computerPick == 'L'))
   cout << "Lizard eats Paper. \nYou Loose." << endl;
 else if ((userPick == 'P') && (computerPick == 'S'))
@@ -111,9 +142,38 @@ else
     
     // HANDOUT (PART B): Inform the user who won.
     
-    
+    // It's incorperated into part A
     
     // HANDOUT (PART C): Randomly display celebratory messages if user won.
+  
+int random;
+   
+  srand (time(NULL)); // initialize random seed.
+    random = rand() % 5;
+  
+ if (win > 0)
+   
+   switch (random)
+    {
+        case 0: 
+            cout << "**** Congratulations, wanna go again? ****";
+            break;
+        case 1: 
+            cout << "**** Well done! It seems lady luck is on your side. ****";
+            break;
+        case 2: 
+            cout << "**** You've beat us this time, but how long until your luck turns? ****";
+            break;
+        case 3: 
+            cout << "**** Great job! You've earned yourself a treat! ****";
+            break;
+        case 4: 
+            cout << "**** Good game. I'll get you next time! ****";
+            break;
+        default:
+            cout << "Error in the function ComputerSelectRPSLK. " << endl;
+    }
+
 
 
 
