@@ -56,6 +56,7 @@ int main()
     // HANDOUT (PART A): Determine the winner of the game.
     bool win = false;
     
+<<<<<<< HEAD
   if ((userPick == 'R') && (computerPick == 'R'))
     cout << "It is a tie." << endl;
   else if ((userPick == 'P') && (computerPick == 'P'))
@@ -136,6 +137,21 @@ else if ((userPick == 'P') && (computerPick == 'L'))
   cout << "Lizard eats Paper. \nYou Loose." << endl;
 else if ((userPick == 'P') && (computerPick == 'S'))
   cout << "Scissors cuts Paper. \nYou Lose." << endl;
+=======
+if ((userPick == 'R') && (computerPick == 'R'))
+  cout << "It is a tie." << endl;
+else if ((userPick == 'P') && (computerPick == 'P'))
+  cout << "It is a tie." << endl;
+else if ((userPick == 'S') && (computerPick == 'S'))
+  cout << "It is a tie." << endl;
+else if ((userPick == 'L') && (computerPick == 'L'))
+  cout << "It is a tie." << endl;
+else if ((userPick == 'K') && (computerPick == 'K'))
+  cout << "It is a tie." << endl;
+else if ((userPick == 'R') && (computerPick == 'P'))
+  cout << "It is a tie." << endl;
+  
+>>>>>>> origin/main
 else 
   cout << "Not accounted for" << endl;
     
