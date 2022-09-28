@@ -65,9 +65,48 @@ else if ((userPick == 'L') && (computerPick == 'L'))
   cout << "It is a tie." << endl;
 else if ((userPick == 'K') && (computerPick == 'K'))
   cout << "It is a tie." << endl;
-  
+else if ((userPick == 'R') && (computerPick == 'P'))
+  cout << "Paper covers Rock. \nYou loose." << endl;
+else if ((userPick == 'R') && (computerPick == 'K'))
+  cout << "Spock vaporizes Rock. \nYou loose." << endl;
+else if ((userPick == 'R') && (computerPick == 'S'))
+  cout << "Rock crushes Scissors. \nYou Win!" << endl;
+else if ((userPick == 'R') && (computerPick == 'L'))
+  cout << "Rock crushes Lizard. \nYou Win!" << endl;
+else if ((userPick == 'L') && (computerPick == 'P'))
+  cout << "Lizard eats Paper. \nYou win!" << endl;
+else if ((userPick == 'L') && (computerPick == 'K'))
+  cout << "Lizard poisons Spock. \nYou Win!" << endl;
+else if ((userPick == 'L') && (computerPick == 'S'))
+  cout << "Scissors decapitates Lizard. \nYou Loose." << endl;
+else if ((userPick == 'L') && (computerPick == 'R'))
+  cout << "Rock crushes Lizard. \nYou Loose." << endl;
+else if ((userPick == 'K') && (computerPick == 'S'))
+  cout << "Spock smashes Scissors. \nYou Win!" << endl;
+else if ((userPick == 'K') && (computerPick == 'R'))
+  cout << "Spcok vaporizes Rock. \nYou Win!" << endl;
+else if ((userPick == 'K') && (computerPick == 'P'))
+  cout << "Paper disproves Spock. \nYou Loose" << endl;
+else if ((userPick == 'K') && (computerPick == 'L'))
+  cout << "Lizard poisons Spock. \nYou Loose." << endl;
+else if ((userPick == 'S') && (computerPick == 'P'))
+  cout << "Scissors cuts Paper. \nYou Win!" << endl;
+else if ((userPick == 'S') && (computerPick == 'L'))
+  cout << "Scissors decapitates Lizard. \nYou Win!" << endl;
+else if ((userPick == 'S') && (computerPick == 'R'))
+  cout << "Rock crushes Scissors. \nYou Loose." << endl;
+else if ((userPick == 'S') && (computerPick == 'K'))
+  cout << "Spock smashes Scissors. \nYou Loose." << endl;
+else if ((userPick == 'P') && (computerPick == 'K'))
+  cout << "Paper disproves Spock. \nYou Win!" << endl;
+else if ((userPick == 'P') && (computerPick == 'R'))
+  cout << "Paper covers Rock. \nYou Win!" << endl;
+else if ((userPick == 'P') && (computerPick == 'L'))
+  cout << "Lizard eats Paper. \nYou Loose." << endl;
+else if ((userPick == 'P') && (computerPick == 'S'))
+  cout << "Scissors cuts Paper. \nYou Lose." << endl;
 else 
-  cout << "Not yet accounted for" << endl;
+  cout << "Not accounted for" << endl;
     
     
     // HANDOUT (PART B): Inform the user who won.
