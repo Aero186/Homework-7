@@ -57,6 +57,14 @@ int main()
     TranslatePick(1, computerPick); // Inform user of computer selection
     
     // HANDOUT (PART A): Determine the winner of the game.
+
+    int RPSLK[5];
+
+  RPSLK [1] = userPick;
+  RPSLK[2] = computerPick;
+  
+  
+  
     bool win = false;
 
   if ((userPick == 'R') && (computerPick == 'R'))
