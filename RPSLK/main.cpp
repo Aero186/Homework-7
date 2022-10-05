@@ -5,6 +5,9 @@ Description: Rock, Paper, Scissors, Lizard, Spock Game
 Last Modified by: Dr. M
 Last Modified on: 9/2020
 *******************************************************************************/
+// Samuel Peel
+// CSCI 130
+// 10-1-22
 #include <iostream>
 #include <cmath>
 #include <cstdlib>
