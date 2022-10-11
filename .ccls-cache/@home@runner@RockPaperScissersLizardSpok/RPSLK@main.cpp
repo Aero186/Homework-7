@@ -58,14 +58,19 @@ int main()
     
     // HANDOUT (PART A): Determine the winner of the game.
 
-    int RPSLK[5];
-
-  RPSLK [1] = userPick;
-  RPSLK[2] = computerPick;
-  
-  
-  
     bool win = false;
+    char RPSLK[2] = {userPick, computerPick};
+    int index;  
+
+  for(index = 0; index < 2; index++){
+
+    
+    }
+
+
+
+  
+
 
   if ((userPick == 'R') && (computerPick == 'R'))
     cout << "It is a tie." << endl;
@@ -149,8 +154,7 @@ int main()
     cout << "Scissors cuts Paper. \nYou Lose." << endl;
 else 
   cout << "Not accounted for" << endl;
-    
-    
+      
     // HANDOUT (PART B): Inform the user who won.
     
     // It's incorperated into part A
