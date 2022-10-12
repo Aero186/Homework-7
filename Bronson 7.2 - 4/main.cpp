@@ -5,11 +5,12 @@
 using namespace std;
 
 int main() {
-  double list[100] = {6.29, 6.95, 7.25, 7.35, 7.40, 7.42};
-  int index;
-  
-  for (index = 0; index < 100; index++)
-    cout << list[index] << " ";
+  int resistance[] = {16, 27, 39, 56, 81};
+  double current[5];
+  double power[5];
 
-  cout << endl;
+  cout << "Input 5 values for current: ";
+  int index;
+  for(index = 0; index < 5; index++)
+    cin >> current[index];
 }
