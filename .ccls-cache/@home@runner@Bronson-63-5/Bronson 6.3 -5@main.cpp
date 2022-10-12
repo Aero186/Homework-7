@@ -1,3 +1,6 @@
+// Samuel Peel
+// CSCI 130
+// 10-12-22
 #include <iostream>
 using namespace std;
 
