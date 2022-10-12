@@ -19,8 +19,15 @@ void fillArray(int list[], int listSize){
 int main() {
   int n, i;
     n = 5;
-  int listA[n]; 
+    i = 0;
+  int list[n]; 
+  int mini;
 
-  fillArray(listA, n);
+  fillArray(list, n);
   
+  for ( i ; i < n; i++){
+  if ( list[mini] > list[i] )
+      mini = i;
+  }
+    cout << mini;
 }
