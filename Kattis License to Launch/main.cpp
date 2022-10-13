@@ -18,10 +18,11 @@ void fillArray(int list[], int listSize){
 
 int main() {
   int n, i;
-    n = 5;
-    i = 0;
+    cin >> n;
+    cin >> i;
   int list[n]; 
   int mini;
+    mini = 0;
 
   fillArray(list, n);
   
