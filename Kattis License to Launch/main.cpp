@@ -5,7 +5,7 @@
 using namespace std;
 
 void fillArray(int list[], int listSize){
-  cout << "Enter " << listSize << " integers: "; // <-- comment out for use in kattis
+/*  cout << "Enter " << listSize << " integers: "; */ // <-- comment out for use in kattis
 
   int index;
 
@@ -19,14 +19,14 @@ void fillArray(int list[], int listSize){
 int main() {
   int n, i;
     cin >> n;
-    cin >> i;
+    
   int list[n]; 
   int mini;
     mini = 0;
 
   fillArray(list, n);
   
-  for ( i ; i < n; i++){
+  for ( i = 0; i < n; i++){
   if ( list[mini] > list[i] )
       mini = i;
   }
